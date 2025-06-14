@@ -19,6 +19,20 @@ The project uses the FastMCP framework to expose causal analysis tools and DoWhy
 ## Setup
 
 1. Create a Python virtual environment and activate it:
-```bash
+'''bash
 python -m venv venv
-source venv/bin/activate  # or `venv\Scripts\activate` on Windows
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+
+2. python -m venv venv
+source venv/bin/activate        # macOS/Linux
+venv\Scripts\activate           # Windows
+
+3. python server.py
+
+
+##
+💡 Project Purpose
+
+This server demonstrates how language-based tool interfaces can support causal analysis workflows using natural language interfaces. The setup is useful for researchers, data scientists, or ML systems that need interpretable causal inference.
+
+
