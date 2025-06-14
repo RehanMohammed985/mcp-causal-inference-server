@@ -1,2 +1,22 @@
 # mcp-causal-inference-server
 A Python-based MCP server implementing causal inference analysis on synthetic customer spending data. Uses DoWhy for causal effect estimation and FastMCP for exposing causal tools. Enables interactive causal analysis with treatment and outcome variables from program signup data.
+
+# MCP Causal Inference Server
+
+This repository contains a Python MCP server (`server.py`) that performs causal inference analysis on synthetic customer spending data.
+
+The project uses the FastMCP framework to expose causal analysis tools and DoWhy to estimate causal effects using methods like propensity score matching and linear regression.
+
+## Features
+
+- Synthetic dataset simulating user spending before and after program signup
+- Causal graph modeling treatment effects and confounders
+- MCP tools for estimating causal effects and querying variable relationships
+- Easily extensible for custom causal inference workflows
+
+## Setup
+
+1. Create a Python virtual environment and activate it:
+```bash
+python -m venv venv
+source venv/bin/activate  # or `venv\Scripts\activate` on Windows
