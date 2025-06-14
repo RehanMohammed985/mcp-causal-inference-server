@@ -30,9 +30,28 @@ venv\Scripts\activate           # Windows
 3. python server.py
 
 
+## Example Dataset Variables
+| Variable       | Description                                |
+| -------------- | ------------------------------------------ |
+| `treatment`    | Whether the user signed up for the program |
+| `pre_spends`   | Spending before treatment month            |
+| `post_spends`  | Spending after treatment month             |
+| `signup_month` | Month when the user enrolled               |
+| `Z`            | Confounder used in the causal graph        |
+
 ##
 💡 Project Purpose
 
 This server demonstrates how language-based tool interfaces can support causal analysis workflows using natural language interfaces. The setup is useful for researchers, data scientists, or ML systems that need interpretable causal inference.
+
+## Tools Available  
+@mcp.tool() get_causal_estimate(treatment, outcome)
+Estimates causal effect using backdoor methods.
+
+@mcp.tool() query_relationship(treatment, outcome)
+Checks if a causal relationship is identifiable using backdoor/frontdoor/IV.
+
+@mcp.tool() get_variable_descriptions()
+Returns descriptions of the available dataset variables.
 
 
